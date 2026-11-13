@@ -62,7 +62,13 @@ function Header() {
             </li>
             <div className="buttons">
               <div className="cv">
-                <button className="cvBtn">Cv-Download</button>
+                <a
+                  href="/Revan_Jafarli_CV (3).pdf"
+                  download="Revan_Jafarli_CV.pdf"
+                  className="cvBtn"
+                >
+                  Cv-Download
+                </a>
                 <p>
                   <MdOutlineFileDownload />
                 </p>

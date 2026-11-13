@@ -1,0 +1,111 @@
+.detailsContainer1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 15% auto;
+}
+.itemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+img {
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 10px;
+}
+.itemText {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.3);
+  width: 400px;
+  height: 500px;
+  gap: 40px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.itemText h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--logo-color);
+}
+.itemText p {
+  line-height: 1.6rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+.itemButton {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.getLinkBtn {
+  display: flex;
+  gap: 10px;
+}
+.getLinkBtn a {
+  color: var(--text-color);
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--logo-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+  transition: ease color 0.4s;
+}
+.getLinkBtn a:hover {
+  color: var(--logo-color);
+}
+.getDemoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.getDemoLink a {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--logo-color);
+  transition: ease color 0.4s;
+}
+.getDemoLink a:hover {
+  color: var(--logo-color);
+}
+.backBtn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  background: none;
+  font-size: 20px;
+  border-bottom: 2px solid var(--logo-color);
+  color: var(--text-color);
+}
+@media screen and (max-width: 1024px) {
+  .itemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse !important;
+    width: 100%;
+    height: 100vh;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  img {
+    width: 390px;
+    height: 300px;
+  }
+}

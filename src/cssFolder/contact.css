@@ -1,0 +1,143 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.contacts .contactContainer {
+  display: flex;
+  gap: 50px;
+  padding: 30px;
+}
+.contactItems {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 450px;
+  height: 400px;
+  padding: 50px;
+  background-color: var(--color-white);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid var(--logo-color);
+}
+.contactItems .aLinkItem {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  width: 100%;
+}
+.contactItems .aLinkItem a {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color2);
+  border: 1px solid var(--logo-color);
+  background-color: transparent;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: ease background-color 0.2s;
+}
+.contactItems .aLinkItem a:hover {
+  background-color: var(--aLinkHover);
+  color: var(--logo-color);
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--logo-color);
+}
+.contactSocial {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+  margin-left: 5px;
+}
+.contactSocial a {
+  font-size: 25px;
+  font-weight: 900;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--aLinkHover);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.2s;
+  color: var(--text-color);
+}
+.contactSocial a:hover {
+  color: var(--logo-color);
+  border: 1px solid var(--logo-color);
+}
+.contactHeader h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--logo-color);
+}
+.conactText {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 450px;
+  height: 400px;
+  padding: 50px;
+}
+.conactText h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--logo-color);
+}
+.conactText p {
+  line-height: 1.9rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+.conactText h2 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 30px;
+}
+.conactText a {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+}
+.conactText a:hover {
+  color: var(--color-white);
+  background-color: var(--logo-color);
+}
+.conactText a:active {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 1024px) {
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactItems {
+    margin-left: 20px;
+  }
+}

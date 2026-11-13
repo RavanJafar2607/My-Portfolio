@@ -1,0 +1,51 @@
+.educationContent {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--logo-color);
+  border-radius: 30px;
+  background-color: var(--aLinkHover);
+}
+.logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.logo h3 {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 900;
+}
+.educational {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 20px;
+}
+.educational div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.educational div span {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--logo-color);
+}
+.educational h3 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.educational div p {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-color);
+}

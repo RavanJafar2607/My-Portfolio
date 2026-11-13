@@ -1,0 +1,125 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  gap: 50px;
+}
+.skillsss {
+  margin-top: 20%;
+}
+.skillsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--logo-color);
+  padding: 10px;
+  border-radius: 10px;
+  width: 310px;
+  min-height: max-content;
+}
+.sklissItems {
+  display: flex;
+  gap: 50px;
+}
+.skillsCardLogo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6rem;
+  width: 100%;
+  justify-content: center;
+}
+.headerContent h4 {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--text-color);
+}
+.headerContent p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.logoIcon1 {
+  color: var(--logo-icon1);
+  background-color: var(--logo-icon1Bg);
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.logoIcon2 {
+  color: var(--logo-icon2);
+  background-color: var(--logo-icon2Bg);
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.logoIcon3 {
+  color: var(--logo-icon3);
+  background-color: var(--logo-icon3Bg);
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.skillsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.coreDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  width: 100%;
+  background-color: var(--core-text);
+  border-radius: 5px;
+}
+.coreIcon {
+  font-size: 14px;
+  color: var(--logo-color);
+}
+.coreDiv .coreText {
+  font-size: 10px;
+  line-height: 1.6rem;
+  color: var(--text-color);
+}
+.percentDiv {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  border-radius: 50px;
+  border: 1px solid var(--logo-color);
+  display: flex;
+  align-items: center;
+}
+.percentDiv p {
+  font-size: 10px;
+}
+.mySkills h3 {
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 900;
+}
+@media screen and (max-width: 1024px) {
+  .sklissItems {
+    display: flex;
+    flex-direction: column;
+  }
+}

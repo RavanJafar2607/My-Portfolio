@@ -1,0 +1,63 @@
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  padding: 20px;
+  align-content: center;
+  justify-items: center;
+  gap: 20px;
+  margin: 10% auto;
+  width: 1000px;
+  border: 1px solid var(--logo-color);
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--color-white);
+}
+.mapDiv {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  background-color: var(--aLinkHover);
+  height: max-content;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--logo-color);
+}
+
+.mapDiv img {
+  border-radius: 10px;
+  width: 390px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.mapDiv button {
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--logo-color);
+  font-size: 17px;
+  font-weight: 700;
+  transition: ease all 0.4s;
+}
+.mapDiv button:hover {
+  border: 1px solid var(--aLinkHover);
+  color: var(--color-white);
+  background-color: var(--logo-color);
+}
+.mapDiv button:active {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 1024px) {
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+  }
+}

@@ -1,0 +1,122 @@
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  margin: 10% auto;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  gap: 20%;
+  justify-content: center;
+}
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 300px;
+  height: max-content;
+}
+.aboutText h3 {
+  font-size: 40px;
+  color: var(--text-color);
+  font-weight: 800;
+}
+.aboutText p {
+  line-height: 1.2rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+.aboutText .aboutFundamental {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.aboutFundamental p {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--aLinkHover);
+  transition: all ease 0.4s;
+  border: 1px solid transparent;
+}
+.aboutFundamental p:hover {
+  transform: scale(1.1);
+  border: 1px solid var(--logo-color);
+}
+.aboutBtn {
+  display: flex;
+  gap: 10px;
+}
+.aboutBtn a {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color2);
+  transition: ease color 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutBtn a:hover {
+  color: var(--logo-color);
+}
+.aboutBtn button {
+  padding: 5px;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all ease 0.4s;
+}
+.aboutBtn button:hover {
+  background-color: var(--logo-color);
+  color: var(--color-white);
+}
+.aboutImage img {
+  width: 450px;
+  height: 500px;
+  box-shadow: 3px 3px 6px 6px rgba(99, 102, 241, 0.5);
+  transition: ease all 0.4s;
+}
+.aboutImage img:hover {
+  transform: skewX(-3deg);
+}
+@media screen and (max-width: 1024px) {
+  .aboutContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    gap: 40px;
+    margin-top: 80px;
+  }
+
+  .aboutText {
+    width: 90%;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .aboutText .aboutFundamental {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .aboutBtn {
+    justify-content: center;
+  }
+
+  .aboutImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutImage img {
+    width: 70%;
+    max-width: 300px;
+    margin-top: 0 !important;
+  }
+}
